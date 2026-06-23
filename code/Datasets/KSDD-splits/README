@@ -1,0 +1,10 @@
+Dataset splits for KolektorSDD as used in the JIM 2019 paper 'Segmentation-based deep-learning approach for surface-defect detection' by Tabernik et al. 
+
+# Usage
+
+Load the splits with python pickle:
+
+    with open(PATH_TO_FILE, 'rb') as f:
+	[train_split, test_split, all] = pickle.load(f)
+    
+Retunred train_split/test_split lists contain 3 arrays corresponding to 3 non-overlaping subsets of the dataset.

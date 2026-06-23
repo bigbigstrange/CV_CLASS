@@ -25,6 +25,21 @@ out/
 *.log
 *.tmp
 
+# Project: large datasets & training artifacts (do not push to GitHub)
+code/Datasets/kolektor缺陷数据集/
+code/Datasets/KolektorSDD2/
+code/Datasets/*.zip
+code/Datasets/*.tar
+code/Datasets/*.tar.gz
+code/*.zip
+code/outputs/checkpoints/**/*.pt
+code/outputs/checkpoints/**/*.pt.tmp
+*.baiduyun.p.downloading
+
+# Keep split definitions and history JSON
+!code/Datasets/KSDD-splits/
+!code/outputs/checkpoints/**/history.json
+
 # Secrets
 .env
 .env.*
